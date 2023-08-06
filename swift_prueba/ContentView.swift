@@ -18,20 +18,17 @@ struct Photo {
 
 let photos = [
     Photo(id: "1", author: "yo", width: 300, heigth: 300, url: "algo.com", download_url: "algo.com"),
-    Photo(id: "1", author: "yo", width: 300, heigth: 300, url: "algo.com", download_url: "algo.com"),
-    Photo(id: "1", author: "yo", width: 300, heigth: 300, url: "algo.com", download_url: "algo.com"),
-    Photo(id: "1", author: "yo", width: 300, heigth: 300, url: "algo.com", download_url: "algo.com"),
+    Photo(id: "2", author: "yo", width: 300, heigth: 300, url: "algo.com", download_url: "algo.com"),
+    Photo(id: "3", author: "yo", width: 300, heigth: 300, url: "algo.com", download_url: "algo.com"),
+    Photo(id: "4", author: "yo", width: 300, heigth: 300, url: "algo.com", download_url: "algo.com"),
 ]
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Listado")
-                .padding()
-                .font(.largeTitle)
+        NavigationView {
             List{
                 ForEach(photos, id: \.id){ photo in
-                    Label(photo.id, systemImage: photo.url)
+                    Text(photo.id + " " + photo.author)
                 }
             }
         }
