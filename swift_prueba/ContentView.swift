@@ -28,7 +28,7 @@ struct ContentView: View {
         NavigationView {
             List{
                 ForEach(photos, id: \.id){ photo in
-                    Text(photo.id + " " + photo.author)
+                    NavigationLink(photo.id + " " + photo.author, destination: Text("some info"))
                 }
             }
         }
