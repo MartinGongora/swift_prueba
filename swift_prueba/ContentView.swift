@@ -28,10 +28,20 @@ struct ContentView: View {
         NavigationView {
             List{
                 ForEach(photos, id: \.id){ photo in
-                    NavigationLink(photo.id + " " + photo.author, destination: Text("some info"))
+                    NavigationLink(photo.id + " " + photo.author, destination: ExpandView(photo: photo))
                 }
             }
         }
+    }
+}
+
+struct ExpandView: View {
+    let photo: Photo
+    
+    var body: some View {
+        Text(photo.id)
+        Text(photo.author)
+        Text(photo.url)
     }
 }
 
