@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Photo {
+/*struct Photo {
     let id: String
     let author: String
     let width: Int
@@ -21,17 +21,23 @@ let photos = [
     Photo(id: "2", author: "yo", width: 300, heigth: 300, url: "algo.com", download_url: "algo.com"),
     Photo(id: "3", author: "yo", width: 300, heigth: 300, url: "algo.com", download_url: "algo.com"),
     Photo(id: "4", author: "yo", width: 300, heigth: 300, url: "algo.com", download_url: "algo.com"),
-]
+]*/
 
 struct ContentView: View {
+    
+    @StateObject var viewModel: ViewModel = ViewModel()
+    
     var body: some View {
         NavigationView {
             List{
-                ForEach(photos, id: \.id){ photo in
+                ForEach(viewModel.photos, id: \.id){ photo in
                     NavigationLink(photo.id + " " + photo.author, destination: ExpandView(photo: photo))
                 }
             }
+        }.onAppear(){
+            viewModel.getPhotos()
         }
+        
     }
 }
 
@@ -39,9 +45,11 @@ struct ExpandView: View {
     let photo: Photo
     
     var body: some View {
-        Text(photo.id)
-        Text(photo.author)
-        Text(photo.url)
+        VStack{
+            Text(photo.id)
+            Text(photo.author)
+            Text(photo.url)
+        }
     }
 }
 

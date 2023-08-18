@@ -14,6 +14,7 @@
 		D74BBD042A7ED52200ED17B5 /* swift_pruebaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BBD032A7ED52200ED17B5 /* swift_pruebaTests.swift */; };
 		D74BBD0E2A7ED52200ED17B5 /* swift_pruebaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BBD0D2A7ED52200ED17B5 /* swift_pruebaUITests.swift */; };
 		D74BBD102A7ED52200ED17B5 /* swift_pruebaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BBD0F2A7ED52200ED17B5 /* swift_pruebaUITestsLaunchTests.swift */; };
+		D7F32D2B2A8E9E22000C29D6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F32D2A2A8E9E22000C29D6 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D74BBD092A7ED52200ED17B5 /* swift_pruebaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_pruebaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74BBD0D2A7ED52200ED17B5 /* swift_pruebaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_pruebaUITests.swift; sourceTree = "<group>"; };
 		D74BBD0F2A7ED52200ED17B5 /* swift_pruebaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_pruebaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D7F32D2A2A8E9E22000C29D6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				D74BBCF42A7ED51900ED17B5 /* ContentView.swift */,
 				D74BBCF62A7ED52000ED17B5 /* Assets.xcassets */,
 				D74BBCF82A7ED52000ED17B5 /* Preview Content */,
+				D7F32D2A2A8E9E22000C29D6 /* ViewModel.swift */,
 			);
 			path = swift_prueba;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74BBCF52A7ED51900ED17B5 /* ContentView.swift in Sources */,
+				D7F32D2B2A8E9E22000C29D6 /* ViewModel.swift in Sources */,
 				D74BBCF32A7ED51900ED17B5 /* swift_pruebaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
